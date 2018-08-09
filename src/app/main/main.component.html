@@ -1,238 +1,36 @@
 <main>
   <section>
     <h1>My works</h1>
-    <div>
-      <div class="row my-works-right">
-        <article class="col-lg-6 description">
-          <h3>Messenger.</h3>
-          <p>Full-stack development. Used technologies HTML5, CSS3, JavaScript, Node.JS, WebSockets, MySQL.
-            It was used the express framework during the development of the server part. Communication in the
-            MESSAGE is in the browser. Data is transferred to the server via WebSocket. The server is
-            processed and written to the MySQL database.</p>
-        </article>
-        <ngb-carousel *ngIf="images">
-          <ng-template ngbSlide>
-            <img [src]="images[0][0]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[0][1]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[0][2]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[0][3]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[0][4]" alt="Random first slide">
-          </ng-template>
-        </ngb-carousel>
-      </div>
-    </div>
-
     <div class="container">
-      <div class="row my-works">
+      <div class="row my-works-right" *ngFor="let i of images">
         <article class="col-lg-6 description">
           <div>
-            <h3>The Alina game</h3>
-            <a href="http://uladzimir-yeudakimovich.ml/phaser-game/" target="_blank">play</a>
+            <h3>{{i[0]}}</h3>
+            <a [href]="i[1]" target="_blank">{{i[2]}}</a>
           </div>
-          <p>This game is "arcade". The development language is JavaScript. It was written using the Phaser framework, the
-            presentation was performed using the Bootstrap framework and connecting the jQuery library.</p>
+          <p>{{i[3]}}</p>
         </article>
         <ngb-carousel *ngIf="images">
           <ng-template ngbSlide>
-            <img [src]="images[1][0]" alt="Random first slide">
+            <img [src]="i[4]" alt="Random first slide">
           </ng-template>
           <ng-template ngbSlide>
-            <img [src]="images[1][1]" alt="Random first slide">
+            <img [src]="i[5]" alt="Random first slide">
           </ng-template>
           <ng-template ngbSlide>
-            <img [src]="images[1][2]" alt="Random first slide">
+            <img [src]="i[6]" alt="Random first slide">
           </ng-template>
           <ng-template ngbSlide>
-            <img [src]="images[1][3]" alt="Random first slide">
+            <img [src]="i[7]" alt="Random first slide">
           </ng-template>
           <ng-template ngbSlide>
-            <img [src]="images[1][4]" alt="Random first slide">
+            <img [src]="i[8]" alt="Random first slide">
           </ng-template>
         </ngb-carousel>
       </div>
     </div>
 
-    <div class="container">
-      <div class="row my-works-right">
-        <article class="col-lg-6 description">
-          <div>
-            <h3>Social-network.</h3>
-            <a href="http://uladzimir-yeudakimovich.ml/social-network/" target="_blank">view site</a>
-          </div>
-          <p>It was written in HTML5, CSS3 and JavaScript. I used vector graphics svg for drawing icons
-            and Yandex maps API for adding a map to the page.</p>
-        </article>
-        <ngb-carousel *ngIf="images">
-          <ng-template ngbSlide>
-            <img [src]="images[2][0]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[2][1]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[2][2]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[2][3]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[2][4]" alt="Random first slide">
-          </ng-template>
-        </ngb-carousel>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row my-works">
-        <article class="col-lg-6 description">
-          <div>
-            <h3>Application.</h3>
-            <a href="http://uladzimir-yeudakimovich.mlreact-app/" target="_blank">view application</a>
-          </div>
-          <p>Task Scheduler To-DO-List. The development language is JavaScript. It was written with the use of the React
-            framework, with the connection of the Redux library.</p>
-        </article>
-        <ngb-carousel *ngIf="images">
-          <ng-template ngbSlide>
-            <img [src]="images[3][0]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[3][1]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[3][2]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[3][3]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[3][4]" alt="Random first slide">
-          </ng-template>
-        </ngb-carousel>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row my-works-right">
-        <article class="col-lg-6 description">
-          <div>
-            <h3>Math-match-game.</h3>
-            <a href="http://uladzimir-yeudakimovich.ml/match-match-game/" target="_blank">play</a>
-          </div>
-          <p>Game for the development of memory. It was written in HTML5, CSS3 and JavaScript.</p>
-        </article>
-        <ngb-carousel *ngIf="images">
-          <ng-template ngbSlide>
-            <img [src]="images[4][0]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[4][1]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[4][2]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[4][3]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[4][4]" alt="Random first slide">
-          </ng-template>
-        </ngb-carousel>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row my-works">
-        <article class="col-lg-6 description">
-          <div>
-            <h3>The site of restaurant.</h3>
-            <a href="http://uladzimir-yeudakimovich.ml/restaurant" target="_blank">view site</a>
-          </div>
-          <p>Online page of restaurant. It was written in HTML5 using CSS Grid Layout and CSS Flexbox.</p>
-        </article>
-        <ngb-carousel *ngIf="images">
-          <ng-template ngbSlide>
-            <img [src]="images[5][0]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[5][1]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[5][2]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[5][3]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[5][4]" alt="Random first slide">
-          </ng-template>
-        </ngb-carousel>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row my-works-right">
-        <article class="col-lg-6 description">
-          <div>
-            <h3>Store site.</h3>
-            <a href="http://uladzimir-yeudakimovich.ml/css-recipes-and-layouts/" target="_blank">view site</a>
-          </div>
-          <p>Online store page. It was written in HTML5 using CSS Grid Layout and CSS Flexbox.</p>
-        </article>
-        <ngb-carousel *ngIf="images">
-          <ng-template ngbSlide>
-            <img [src]="images[6][0]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[6][1]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[6][2]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[6][3]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[6][4]" alt="Random first slide">
-          </ng-template>
-        </ngb-carousel>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row my-works">
-        <article class="col-lg-6 description">
-          <h3>Application for banks.</h3>
-          <p>The development language is JavaScript. It was written using the National Bank API. For constructing
-            graphs, we use canvas. Application for determining the exchange rate of different currencies and
-            plotting the dynamics of changes over a certain period of time.</p>
-        </article>
-        <ngb-carousel *ngIf="images">
-          <ng-template ngbSlide>
-            <img [src]="images[7][0]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[7][1]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[7][2]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[7][3]" alt="Random first slide">
-          </ng-template>
-          <ng-template ngbSlide>
-            <img [src]="images[7][4]" alt="Random first slide">
-          </ng-template>
-        </ngb-carousel>
-      </div>
-    </div>
+    <!-- <div class="row my-works" *ngFor="let i of images"> -->
+        
   </section>
 </main>
