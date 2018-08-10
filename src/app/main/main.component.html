@@ -1,11 +1,11 @@
 <main>
   <section>
     <h1>My works</h1>
-    <div class="container">
-      <div class="row my-works-right" *ngFor="let i of images">
+    <div class="container" *ngFor="let i of images let e=even; let o=odd;">
+      <div class='row my-works-right'>
         <article class="col-lg-6 description">
           <div>
-            <h3>{{i[0]}}</h3>
+            <h3>{{i[0]}} {{e}} {{o}}</h3>
             <a [href]="i[1]" target="_blank">{{i[2]}}</a>
           </div>
           <p>{{i[3]}}</p>
