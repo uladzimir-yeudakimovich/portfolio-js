@@ -2,7 +2,7 @@
   <section>
     <h1>My works</h1>
     <div class="container" *ngFor="let slide of data let e=even; let o=odd;">
-      <div class='row my-works-right'>
+      <div class='{{e}} ? row my-works : row my-works-right'>
         <article class="col-lg-6 description">
           <div>
             <h3>{{slide.name}} {{e}} {{o}}</h3>

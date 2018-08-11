@@ -23,87 +23,101 @@ export class MainComponent {
         'src/app/images/chat/chat_laptop5.jpg'
       ]
     },
-    [
-      'The Alina game',
-      'http://uladzimir-yeudakimovich.ml/phaser-game/',
-      'play',
-      `This game is "arcade". The development language is JavaScript. It was written using the Phaser framework, the
+    {
+      name: 'The Alina game',
+      link: 'http://uladzimir-yeudakimovich.ml/phaser-game/',
+      click: 'play',
+      description: `This game is "arcade". The development language is JavaScript. It was written using the Phaser framework, the
         presentation was performed using the Bootstrap framework and connecting the jQuery library.`,
-      'src/app/images/game/game_laptop1.jpg',
-      'src/app/images/game/game_laptop2.jpg',
-      'src/app/images/game/game_laptop3.jpg',
-      'src/app/images/game/game_laptop4.jpg',
-      'src/app/images/game/game_laptop5.jpg'
-    ],
-    [
-      'Social-network.',
-      'http://uladzimir-yeudakimovich.ml/social-network/',
-      'view site',
-      `It was written in HTML5, CSS3 and JavaScript. I used vector graphics svg for drawing icons
+      images : [
+        'src/app/images/game/game_laptop1.jpg',
+        'src/app/images/game/game_laptop2.jpg',
+        'src/app/images/game/game_laptop3.jpg',
+        'src/app/images/game/game_laptop4.jpg',
+        'src/app/images/game/game_laptop5.jpg'
+      ]
+    },
+    {
+      name: 'Social-network.',
+      link: 'http://uladzimir-yeudakimovich.ml/social-network/',
+      click: 'view site',
+      description: `It was written in HTML5, CSS3 and JavaScript. I used vector graphics svg for drawing icons
         and Yandex maps API for adding a map to the page.`,
-      'src/app/images/social/social_laptop1.jpg',
-      'src/app/images/social/social_laptop2.jpg',
-      'src/app/images/social/social_laptop3.jpg',
-      'src/app/images/social/social_laptop4.jpg',
-      'src/app/images/social/social_laptop5.jpg'
-    ],
-    [
-      'Application.',
-      'http://uladzimir-yeudakimovich.mlreact-app/',
-      'view application',
-      `Task Scheduler To-DO-List. The development language is JavaScript. It was written with the use of the React
+      images : [
+        'src/app/images/social/social_laptop1.jpg',
+        'src/app/images/social/social_laptop2.jpg',
+        'src/app/images/social/social_laptop3.jpg',
+        'src/app/images/social/social_laptop4.jpg',
+        'src/app/images/social/social_laptop5.jpg'
+      ]
+    },
+    {
+      name: 'Application.',
+      link: 'http://uladzimir-yeudakimovich.mlreact-app/',
+      click: 'view application',
+      description: `Task Scheduler To-DO-List. The development language is JavaScript. It was written with the use of the React
         framework, with the connection of the Redux library.`,
-      'src/app/images/react/app_laptop1.jpg',
-      'src/app/images/react/app_laptop2.jpg',
-      'src/app/images/react/app_laptop3.jpg',
-      'src/app/images/react/app_laptop4.jpg',
-      'src/app/images/react/app_laptop5.jpg'
-    ],
-    [
-      'Math-match-game.',
-      'http://uladzimir-yeudakimovich.ml/match-match-game/',
-      'play',
-      `Game for the development of memory. It was written in HTML5, CSS3 and JavaScript.`,
-      'src/app/images/match/match_laptop1.jpg',
-      'src/app/images/match/match_laptop2.jpg',
-      'src/app/images/match/match_laptop3.jpg',
-      'src/app/images/match/match_laptop4.jpg',
-      'src/app/images/match/match_laptop5.jpg'
-    ],
-    [
-      'The site of restaurant.',
-      'http://uladzimir-yeudakimovich.ml/restaurant',
-      'view site',
-      'Online page of restaurant. It was written in HTML5 using CSS Grid Layout and CSS Flexbox.',
-      'src/app/images/restaurant/restaurant_laptop1.jpg',
-      'src/app/images/restaurant/restaurant_laptop2.jpg',
-      'src/app/images/restaurant/restaurant_laptop3.jpg',
-      'src/app/images/restaurant/restaurant_laptop4.jpg',
-      'src/app/images/restaurant/restaurant_laptop5.jpg'
-    ],
-    [
-      'Store site.',
-      'http://uladzimir-yeudakimovich.ml/css-recipes-and-layouts/',
-      'view site',
-      `Online store page. It was written in HTML5 using CSS Grid Layout and CSS Flexbox.`,
-      'src/app/images/site/site_laptop1.jpg',
-      'src/app/images/site/site_laptop2.jpg',
-      'src/app/images/site/site_laptop3.jpg',
-      'src/app/images/site/site_laptop4.jpg',
-      'src/app/images/site/site_laptop5.jpg'
-    ],
-    [
-      'Application for banks.',
-      '',
-      '',
-      `The development language is JavaScript. It was written using the National Bank API. For constructing
+      images : [
+        'src/app/images/react/app_laptop1.jpg',
+        'src/app/images/react/app_laptop2.jpg',
+        'src/app/images/react/app_laptop3.jpg',
+        'src/app/images/react/app_laptop4.jpg',
+        'src/app/images/react/app_laptop5.jpg'
+      ]
+    },
+    {
+      name: 'Math-match-game.',
+      link: 'http://uladzimir-yeudakimovich.ml/match-match-game/',
+      click: 'play',
+      description: `Game for the development of memory. It was written in HTML5, CSS3 and JavaScript.`,
+      images : [
+        'src/app/images/match/match_laptop1.jpg',
+        'src/app/images/match/match_laptop2.jpg',
+        'src/app/images/match/match_laptop3.jpg',
+        'src/app/images/match/match_laptop4.jpg',
+        'src/app/images/match/match_laptop5.jpg'
+      ]
+    },
+    {
+      name: 'The site of restaurant.',
+      link: 'http://uladzimir-yeudakimovich.ml/restaurant',
+      click: 'view site',
+      description: 'Online page of restaurant. It was written in HTML5 using CSS Grid Layout and CSS Flexbox.',
+      images : [
+        'src/app/images/restaurant/restaurant_laptop1.jpg',
+        'src/app/images/restaurant/restaurant_laptop2.jpg',
+        'src/app/images/restaurant/restaurant_laptop3.jpg',
+        'src/app/images/restaurant/restaurant_laptop4.jpg',
+        'src/app/images/restaurant/restaurant_laptop5.jpg'
+      ]
+    },
+    {
+      name: 'Store site.',
+      link: 'http://uladzimir-yeudakimovich.ml/css-recipes-and-layouts/',
+      click: 'view site',
+      description: `Online store page. It was written in HTML5 using CSS Grid Layout and CSS Flexbox.`,
+      images : [
+        'src/app/images/site/site_laptop1.jpg',
+        'src/app/images/site/site_laptop2.jpg',
+        'src/app/images/site/site_laptop3.jpg',
+        'src/app/images/site/site_laptop4.jpg',
+        'src/app/images/site/site_laptop5.jpg'
+      ]
+    },
+    {
+      name: 'Application for banks.',
+      link: '',
+      click: '',
+      description: `The development language is JavaScript. It was written using the National Bank API. For constructing
         graphs, we use canvas. Application for determining the exchange rate of different currencies and
         plotting the dynamics of changes over a certain period of time.`,
-      'src/app/images/currency/currency_laptop1.jpg',
-      'src/app/images/currency/currency_laptop2.jpg',
-      'src/app/images/currency/currency_laptop3.jpg',
-      'src/app/images/currency/currency_laptop4.jpg',
-      'src/app/images/currency/currency_laptop5.jpg'
-    ]
+      images : [
+        'src/app/images/currency/currency_laptop1.jpg',
+        'src/app/images/currency/currency_laptop2.jpg',
+        'src/app/images/currency/currency_laptop3.jpg',
+        'src/app/images/currency/currency_laptop4.jpg',
+        'src/app/images/currency/currency_laptop5.jpg'
+      ]
+    }
   ];
 }
