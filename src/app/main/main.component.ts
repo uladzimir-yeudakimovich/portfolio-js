@@ -6,21 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent {
-  images = [
-    [
-      'Messenger.',
-      '',
-      '',
-      `Full-stack development. Used technologies HTML5, CSS3, JavaScript, Node.JS, WebSockets, MySQL.
+  data = [
+    {
+      name: 'Messenger.',
+      link: '',
+      click: '',
+      description: `Full-stack development. Used technologies HTML5, CSS3, JavaScript, Node.JS, WebSockets, MySQL.
         It was used the express framework during the development of the server part. Communication in the
         MESSAGE is in the browser. Data is transferred to the server via WebSocket. The server is
         processed and written to the MySQL database.`,
-      'src/app/images/chat/chat_laptop1.jpg',
-      'src/app/images/chat/chat_laptop2.jpg',
-      'src/app/images/chat/chat_laptop3.jpg',
-      'src/app/images/chat/chat_laptop4.jpg',
-      'src/app/images/chat/chat_laptop5.jpg'
-    ],
+      images : [
+        'src/app/images/chat/chat_laptop1.jpg',
+        'src/app/images/chat/chat_laptop2.jpg',
+        'src/app/images/chat/chat_laptop3.jpg',
+        'src/app/images/chat/chat_laptop4.jpg',
+        'src/app/images/chat/chat_laptop5.jpg'
+      ]
+    },
     [
       'The Alina game',
       'http://uladzimir-yeudakimovich.ml/phaser-game/',
