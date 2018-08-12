@@ -1,11 +1,11 @@
 <main>
   <section>
     <h1>My works</h1>
-    <div class="container" *ngFor="let slide of data let e=even; let o=odd;">
-      <div class='{{e}} ? row my-works : row my-works-right'>
+    <div class="container" *ngFor="let slide of data let e=even;">
+      <div class="{{e ? 'row my-works' : 'row my-works-right'}}">
         <article class="col-lg-6 description">
           <div>
-            <h3>{{slide.name}} {{e}} {{o}}</h3>
+            <h3>{{slide.name}}</h3>
             <a href="{{slide.link}}" target="_blank">{{slide.click}}</a>
           </div>
           <p>{{slide.description}}</p>
@@ -29,8 +29,5 @@
         </ngb-carousel>
       </div>
     </div>
-
-    <!-- <div class="row my-works" *ngFor="let i of images"> -->
-
   </section>
 </main>
