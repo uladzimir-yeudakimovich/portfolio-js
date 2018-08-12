@@ -9,8 +9,6 @@ export class MainComponent {
   data = [
     {
       name: 'Messenger.',
-      link: '',
-      click: '',
       description: `Full-stack development. Used technologies HTML5, CSS3, JavaScript, Node.JS, WebSockets, MySQL.
         It was used the express framework during the development of the server part. Communication in the
         MESSAGE is in the browser. Data is transferred to the server via WebSocket. The server is
@@ -106,8 +104,6 @@ export class MainComponent {
     },
     {
       name: 'Application for banks.',
-      link: '',
-      click: '',
       description: `The development language is JavaScript. It was written using the National Bank API. For constructing
         graphs, we use canvas. Application for determining the exchange rate of different currencies and
         plotting the dynamics of changes over a certain period of time.`,
