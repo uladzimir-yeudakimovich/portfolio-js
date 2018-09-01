@@ -1,7 +1,7 @@
 <main>
   <section>
     <h1>My works</h1>
-    <div class="container" *ngFor="let slide of data let e=even;">
+    <div class="container" *ngFor="let slide of this.data let e=even;">
       <div class="{{e ? 'row my-works' : 'row my-works-right'}}">
         <article class="col-xl-6 description">
           <div>
