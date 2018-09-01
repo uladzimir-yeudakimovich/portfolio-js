@@ -8,17 +8,15 @@ import { MessageService } from '../../services/message.service';
 })
 export class FooterComponent implements OnInit {
   public messages = [];
-
-  constructor(public messageService: MessageService) {}
-
+  public model = [];
   public later = {
     name: '',
     email: '',
     message: ''
   }
 
-  private model = [];
-
+  constructor(public messageService: MessageService) {}
+  
   ngOnInit() {
     this.messageService.getMessage().subscribe(dataFromServer => {
       for (const key in dataFromServer['mess']) {

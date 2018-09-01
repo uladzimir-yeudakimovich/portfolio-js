@@ -10,9 +10,16 @@ export class MessageService {
     return this.http.get("src/app/message.json");
   }
 
-  public updateMessage(data) {
-    let body = JSON.stringify(data);
+  public updateMessage(messages) {
+    let body = JSON.stringify(messages);
     console.log(body);
-    return this.http.put("src/app/message.json", body);
+    return this.http.put("src/app/message.json", body).subscribe(
+        data => {
+            console.log("PUT Request is successful ", data);
+        },
+        error => {
+            console.log("Error", error);
+        }
+    );  
   }
 }
