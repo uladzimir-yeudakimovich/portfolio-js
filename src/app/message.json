@@ -2,12 +2,12 @@
     "mess": [
         {
             "email": "anna@gmail.com",
-            "message": "A grate works!!!",
+            "message": "Super work!!!",
             "name" : "Anna"
         },
         {
             "email": "aleksandr@gmail.com",
-            "message": "How muth this application?",
+            "message": "How much is this application?",
             "name" : "Aleksandr"
         }
     ]

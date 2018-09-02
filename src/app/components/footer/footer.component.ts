@@ -17,8 +17,12 @@ export class FooterComponent implements OnInit {
 
   constructor(public messageService: MessageService) {}
   
-  ngOnInit() {
-    this.messageService.getMessage().subscribe(dataFromServer => {
+  ngOnInit(): void {
+    this.getMessages();
+  }
+
+  getMessages() {
+    return this.messageService.getMessages().subscribe(dataFromServer => {
       for (const key in dataFromServer['mess']) {
         this.messages.push(dataFromServer['mess'][key]);
       }
