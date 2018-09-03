@@ -27,10 +27,10 @@
         </ul>
       </section>
       <form class="col-md-6">
-        <input name="text" placeholder="Enter name *" [(ngModel)]="later.name" required>
-        <input name="email" placeholder="Enter email *" [(ngModel)]="later.email" required>
-        <textarea name="message" placeholder="Enter message *" [(ngModel)]="later.message" required></textarea>
-        <button type="submit" class="btn btn-primary btn-block" (click)="addMessage()">Submit</button>
+        <input name="text" id="laterName" placeholder="Enter name *" [(ngModel)]="later.name" required>
+        <input name="email" id="laterEmail" placeholder="Enter email *" [(ngModel)]="later.email" required>
+        <textarea name="message" id="laterMessage" placeholder="Enter message *" [(ngModel)]="later.message" required></textarea>
+        <button type="submit" class="btn btn-primary btn-block" (click)="setMessage()">Submit</button>
       </form>
     </div>
   </div>
