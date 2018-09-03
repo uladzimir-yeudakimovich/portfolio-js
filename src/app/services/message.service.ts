@@ -8,12 +8,12 @@ export class MessageService {
   constructor(private http: HttpClient) {}
 
   public getMessages() {
-    return this.http.get("src/app/message.json");
+    return this.http.get("assets/message.json");
   }
 
   public updateMessage(messages) {
     let body = JSON.stringify(messages);
     console.log(body);
-    return this.http.put("src/app/message.json", body);
+    return this.http.put("assets/message.json", body);
   }
 }

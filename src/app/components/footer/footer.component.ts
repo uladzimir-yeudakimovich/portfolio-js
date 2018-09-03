@@ -38,7 +38,9 @@ export class FooterComponent implements OnInit {
     } else {document.getElementById('laterEmail').style.border = '';}
     if (this.later.message === '') {
       document.getElementById('laterMessage').style.border = 'solid red';
-    } else {document.getElementById('laterMessage').style.border = '';}
+    } else {
+      document.getElementById('laterMessage').style.border = '';
+    }
     if (this.later.name !== '' && this.later.email !== '' && this.later.message !== '') {
       this.model = [];
       this.messages.forEach((n) => this.model.push(n));

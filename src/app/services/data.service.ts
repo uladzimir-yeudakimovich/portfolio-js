@@ -7,6 +7,6 @@ export class DataService {
   constructor(private http: HttpClient) {}
 
   public getData() {
-    return this.http.get("src/app/data.json");
+    return this.http.get("assets/data.json");
   }
 }
