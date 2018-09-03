@@ -14,6 +14,11 @@ export class MessageService {
   public updateMessage(messages) {
     let body = JSON.stringify(messages);
     console.log(body);
-    return this.http.put("assets/message.json", body);
+    // return this.http.put("assets/message.json", body); /*for server*/
+    return localStorage.setItem("messages", body);        /*for localStorage*/
+  }
+
+  public getLocalMessages() {
+    return JSON.parse(localStorage.getItem("messages"));
   }
 }

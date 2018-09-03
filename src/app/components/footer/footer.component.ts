@@ -8,6 +8,7 @@ import { MessageService } from '../../services/message.service';
 })
 export class FooterComponent implements OnInit {
   public messages = [];
+  public localMessages =[];
   public model = [];
   public later = {
     name: '',
@@ -19,6 +20,7 @@ export class FooterComponent implements OnInit {
   
   ngOnInit(): void {
     this.getMessages();
+    this.getLocalMessages();
   }
 
   getMessages() {
@@ -27,6 +29,13 @@ export class FooterComponent implements OnInit {
         this.messages.push(dataFromServer['mess'][key]);
       }
     });
+  }
+
+  getLocalMessages() {
+    for (const key in this.messageService.getLocalMessages()['mess']) {
+      this.localMessages.push(this.messageService.getLocalMessages()['mess'][key]);
+    }
+    console.log(this.localMessages);
   }
 
   setMessage() {
@@ -43,7 +52,8 @@ export class FooterComponent implements OnInit {
     }
     if (this.later.name !== '' && this.later.email !== '' && this.later.message !== '') {
       this.model = [];
-      this.messages.forEach((n) => this.model.push(n));
+      // this.messages.forEach((n) => this.model.push(n));
+      this.localMessages.forEach((n) => this.model.push(n));
       this.model.push(this.later);
       this.messageService.updateMessage({mess: this.model});
       this.later = {
