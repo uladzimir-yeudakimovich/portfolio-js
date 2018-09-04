@@ -14,7 +14,7 @@ export class FooterComponent implements OnInit {
     name: '',
     email: '',
     message: ''
-  }
+  };
 
   constructor(public messageService: MessageService) {}
   
@@ -35,7 +35,8 @@ export class FooterComponent implements OnInit {
     for (const key in this.messageService.getLocalMessages()['mess']) {
       this.localMessages.push(this.messageService.getLocalMessages()['mess'][key]);
     }
-    console.log(this.localMessages);
+    // this.messages.forEach((n) => this.model.push(n));          /*for server*/
+    this.localMessages.forEach((n) => this.model.push(n));        /*for localStorage*/
   }
 
   setMessage() {
@@ -51,16 +52,13 @@ export class FooterComponent implements OnInit {
       document.getElementById('laterMessage').style.border = '';
     }
     if (this.later.name !== '' && this.later.email !== '' && this.later.message !== '') {
-      this.model = [];
-      // this.messages.forEach((n) => this.model.push(n));
-      this.localMessages.forEach((n) => this.model.push(n));
       this.model.push(this.later);
       this.messageService.updateMessage({mess: this.model});
       this.later = {
         name: '',
         email: '',
         message: ''
-      }
+      };
     }
   }
 

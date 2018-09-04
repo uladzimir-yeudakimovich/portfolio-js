@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs/operators';
 
 @Injectable()
 export class MessageService {
@@ -13,9 +12,8 @@ export class MessageService {
 
   public updateMessage(messages) {
     let body = JSON.stringify(messages);
-    console.log(body);
-    // return this.http.put("assets/message.json", body); /*for server*/
-    return localStorage.setItem("messages", body);        /*for localStorage*/
+    // return this.http.put("assets/message.json", body);       /*for server*/
+    return localStorage.setItem("messages", body);              /*for localStorage*/
   }
 
   public getLocalMessages() {
