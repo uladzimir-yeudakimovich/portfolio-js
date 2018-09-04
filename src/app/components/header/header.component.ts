@@ -20,7 +20,6 @@ export class HeaderComponent implements OnInit {
       for (const key in dataFromServer['header']) {
         this.data.push(dataFromServer['header'][key]);
       }
-      console.log(this.data);
     });
   }
 }

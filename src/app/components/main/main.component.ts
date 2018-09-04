@@ -10,7 +10,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class MainComponent implements OnInit {
   public data = [];
 
-  constructor(public dataService: DataService, translate: TranslateService) {
+  constructor(public dataService: DataService, public translate: TranslateService) {
     translate.setDefaultLang('ru');
   }
 
