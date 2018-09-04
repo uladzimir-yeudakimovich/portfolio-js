@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MessageService } from '../../services/message.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-footer',
@@ -16,7 +17,9 @@ export class FooterComponent implements OnInit {
     message: ''
   };
 
-  constructor(public messageService: MessageService) {}
+  constructor(public messageService: MessageService, translate: TranslateService) {
+    translate.setDefaultLang('ru');
+  }
   
   ngOnInit(): void {
     this.getMessages();

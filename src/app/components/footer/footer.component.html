@@ -8,12 +8,18 @@
     <div class="row item" *ngFor="let later of this.messages">
       <div class="col-md-3"><p>{{later.name}}</p></div>
       <div class="col-md-3"><p>{{later.email}}</p></div>
-      <div class="col-md-6"><p>{{later.message}}</p></div>
+      <div class="col-md-6">
+          <p>{{later.message}}</p>
+          <p><i>{{later.message | translate}}</i></p>
+        </div>
     </div>
     <div class="row item" *ngFor="let later of this.localMessages">
       <div class="col-md-3"><p>{{later.name}}</p></div>
       <div class="col-md-3"><p>{{later.email}}</p></div>
-      <div class="col-md-6"><p>{{later.message}}</p></div>
+      <div class="col-md-6">
+        <p>{{later.message}}</p>
+        <p><i>{{later.message | translate}}</i></p>
+      </div>
     </div>
   </div>
   <div class="container">

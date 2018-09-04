@@ -1,4 +1,16 @@
-[
+{
+  "header": [
+    {
+      "position": "Front-end developer",
+      "name": "Uladzimir Yeudakimovich",
+      "description1": "A few words about me. I've finished the courses at Rolling Scopes School (EPAM) and Devincubator with a specialization in front-end development. I use technologies such as HTML5, CSS3, JavaScript, LESS and SASS preprocessors, Git version control system. I use Photoshop for working with mockups. I've got experience working with the following frameworks: Bootstrap, Phaser, React, Angular and express. When working with the server side of applications I use node.js, WebSockets.  There is experience with the MySQL database and various APIs. To build and optimize projects I use webpack.",
+      "description2": "A few words about me. I've finished the courses at Rolling Scopes School (EPAM) and Devincubator with a specialization in front-end development. I use technologies such as HTML5, CSS3, JavaScript, LESS and SASS preprocessors, Git version control system. I use Photoshop for working with mockups. I've got experience working with the following frameworks: Bootstrap, Phaser, React, Angular and express. When working with the server side of applications I use node.js, WebSockets.  There is experience with the MySQL database and various APIs. To build and optimize projects I use webpack.",
+      "image1": "assets/images/logo_laptop.jpg",
+      "image2": "assets/images/logo_phone.jpg",
+      "image3": "assets/images/logo_tablet.jpg"
+    }
+  ],
+  "main": [
     {
       "name": "Messenger.",
       "description": "Full-stack development. Used technologies HTML5, CSS3, JavaScript, Node.JS, WebSockets, MySQL. It was used the express framework during the development of the server part. Communication in the MESSAGE is in the browser. Data is transferred to the server via WebSocket. The server is processed and written to the MySQL database.",
@@ -100,3 +112,4 @@
       ]
     }
   ]
+}
