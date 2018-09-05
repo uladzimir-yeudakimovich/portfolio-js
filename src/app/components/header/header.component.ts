@@ -10,14 +10,14 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class HeaderComponent implements OnInit {
   public data = [];
-  public buttons = true;
+  public english: boolean = true;
 
   constructor(public dataService: DataService, public translate: TranslateService, public languageService: LanguageService) {
     translate.setDefaultLang('ru');
   }
 
   setLanguage() {
-    this.languageService.setLanguage(!this.buttons);
+    this.languageService.setLanguage(!this.english);
   }
 
   ngOnInit() {

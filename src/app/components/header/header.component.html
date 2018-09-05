@@ -1,14 +1,14 @@
 <header>
   <div class="container language-en">
     <div class="btn-group btn-group-toggle" (click)="setLanguage()">
-        <label ngbButtonLabel class="{{buttons ? 'btn btn-primary' : 'btn btn-light'}}">
-          <input ngbButton type="checkbox" ngbButton [(ngModel)]="buttons">English
+        <label ngbButtonLabel class="{{english ? 'btn btn-primary' : 'btn btn-light'}}">
+          <input ngbButton type="checkbox" ngbButton [(ngModel)]="english">English
         </label>
-        <label ngbButtonLabel class="{{buttons ? 'btn btn-light' : 'btn btn-primary'}}">
-          <input ngbButton type="checkbox" ngbButton [(ngModel)]="buttons">Russian
+        <label ngbButtonLabel class="{{english ? 'btn btn-light' : 'btn btn-primary'}}">
+          <input ngbButton type="checkbox" ngbButton [(ngModel)]="english">Russian
         </label>
     </div>
-    <div class="row" *ngIf="this.data[0] !== undefined && this.buttons">
+    <div class="row" *ngIf="this.data[0] !== undefined && this.english">
       <div class="d-none d-lg-block col-lg-6 col-xl-5" style="padding: 0;">
         <figure>
           <img class="img-fluid" src="{{this.data[0].image1}}" alt="" style="margin-bottom: -16px;">
@@ -32,7 +32,7 @@
       </article>
     </div>
 
-    <div class="row" *ngIf="this.data[0] !== undefined && !this.buttons">
+    <div class="row" *ngIf="this.data[0] !== undefined && !this.english">
       <div class="d-none d-lg-block col-lg-6 col-xl-5" style="padding: 0;">
         <figure>
           <img class="img-fluid" src="{{this.data[0].image1}}" alt="" style="margin-bottom: -16px;">
