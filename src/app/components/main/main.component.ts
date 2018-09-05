@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../services/data.service';
+import { LanguageService } from '../../services/language.service';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -9,8 +10,9 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class MainComponent implements OnInit {
   public data = [];
+  public english: boolean;
 
-  constructor(public dataService: DataService, public translate: TranslateService) {
+  constructor(public dataService: DataService, public translate: TranslateService,  public languageService: LanguageService) {
     translate.setDefaultLang('ru');
   }
 
@@ -20,5 +22,7 @@ export class MainComponent implements OnInit {
         this.data.push(dataFromServer['main'][key]);
       }
     });
+    this.english = this.languageService.getLanguage();
+    console.log(this.english);
   }
 }

@@ -1,6 +1,6 @@
 <header>
   <div class="container language-en">
-    <div class="btn-group btn-group-toggle">
+    <div class="btn-group btn-group-toggle" (click)="setLanguage()">
         <label ngbButtonLabel class="{{buttons ? 'btn btn-primary' : 'btn btn-light'}}">
           <input ngbButton type="checkbox" ngbButton [(ngModel)]="buttons">English
         </label>

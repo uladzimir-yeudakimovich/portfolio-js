@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../services/data.service';
+import { LanguageService } from '../../services/language.service';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -11,8 +12,12 @@ export class HeaderComponent implements OnInit {
   public data = [];
   public buttons = true;
 
-  constructor(public dataService: DataService, translate: TranslateService) {
+  constructor(public dataService: DataService, public translate: TranslateService, public languageService: LanguageService) {
     translate.setDefaultLang('ru');
+  }
+
+  setLanguage() {
+    this.languageService.setLanguage(!this.buttons);
   }
 
   ngOnInit() {

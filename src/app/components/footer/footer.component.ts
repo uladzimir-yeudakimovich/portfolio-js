@@ -57,6 +57,7 @@ export class FooterComponent implements OnInit {
     if (this.later.name !== '' && this.later.email !== '' && this.later.message !== '') {
       this.model.push(this.later);
       this.messageService.updateMessage({mess: this.model});
+      this.localMessages.push(this.later);
       this.later = {
         name: '',
         email: '',

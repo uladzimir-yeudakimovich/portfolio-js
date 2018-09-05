@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 
 import { DataService } from './services/data.service';
 import { MessageService } from './services/message.service';
+import { LanguageService } from './services/language.service';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -40,7 +41,8 @@ export function createTranslateLoader(http: HttpClient) {
   ],
   providers: [
     DataService,
-    MessageService
+    MessageService,
+    LanguageService
   ],
   bootstrap: [AppComponent]
 })
