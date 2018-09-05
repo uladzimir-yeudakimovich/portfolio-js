@@ -16,7 +16,7 @@ import { MessageService } from './services/message.service';
 import { LanguageService } from './services/language.service';
 
 export function createTranslateLoader(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+  return new TranslateHttpLoader(http, './src/assets/i18n/', '.json');
 }
 
 @NgModule({
