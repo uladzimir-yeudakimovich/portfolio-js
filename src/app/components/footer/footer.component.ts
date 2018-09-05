@@ -23,7 +23,7 @@ export class FooterComponent implements OnInit {
   
   ngOnInit(): void {
     this.getMessages();
-    this.getLocalMessages();
+    this.getLocalMessages();         /*if you want to clean the localStorage, will comment out this line and push new message without validation*/
   }
 
   getMessages() {
