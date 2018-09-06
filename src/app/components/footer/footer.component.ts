@@ -16,6 +16,8 @@ export class FooterComponent implements OnInit {
     email: '',
     message: ''
   };
+  public show: boolean = true;
+  public showMessage = [];
 
   constructor(public messageService: MessageService, translate: TranslateService) {
     translate.setDefaultLang('ru');
@@ -70,6 +72,20 @@ export class FooterComponent implements OnInit {
     this.localMessages.splice($event.target['id'], 1);
     this.model.splice($event.target['id'], 1);
     this.messageService.updateMessage({mess: this.model});
+  }
+
+  showDetails(e) {
+    this.show = false;
+    this.showMessage.push(this.localMessages[e]);
+    console.log(this.showMessage[0]);
+  }
+
+  updateMessage() {
+    this.show = true;
+  }
+
+  closeMessage() {
+    this.show = true;
   }
 
 }
