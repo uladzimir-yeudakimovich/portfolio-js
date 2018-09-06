@@ -17,10 +17,11 @@
       <div class="row item" *ngFor="let later of this.localMessages">
         <div class="col-md-3"><p>{{later.name}}</p></div>
         <div class="col-md-3"><p>{{later.email}}</p></div>
-        <div class="col-md-6">
+        <div class="col-md-5">
           <p style="margin: 10px 0 -10px;">{{later.message}}</p>
           <p style="margin-top: -10px;"><i>{{later.message | translate}}</i></p>
         </div>
+        <div class="col-md-1 close" (click)="close($event)"><span id="{{this.localMessages.indexOf(later)}}">&times;</span></div>
       </div>
     </div>
   </div>

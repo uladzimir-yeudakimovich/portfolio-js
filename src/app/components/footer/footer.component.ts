@@ -66,4 +66,8 @@ export class FooterComponent implements OnInit {
     }
   }
 
+  close($event) {
+    this.localMessages.splice($event.target['id'], 1);
+  }
+
 }
