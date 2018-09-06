@@ -68,6 +68,8 @@ export class FooterComponent implements OnInit {
 
   close($event) {
     this.localMessages.splice($event.target['id'], 1);
+    this.model.splice($event.target['id'], 1);
+    this.messageService.updateMessage({mess: this.model});
   }
 
 }
