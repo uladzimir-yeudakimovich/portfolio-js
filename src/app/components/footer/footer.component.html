@@ -38,7 +38,9 @@
           <p style="margin: 10px 0 -10px;">{{later.message}}</p>
           <p style="margin-top: -10px;"><i>{{later.message | translate}}</i></p>
         </div>
-        <div class="col-md-1 close" (click)="close($event)"><span id="{{this.localMessages.indexOf(later)}}">&times;</span></div>
+        <div>
+          <span class="col-md-1 delete" (click)="delete($event)" id="{{this.localMessages.indexOf(later)}}">&times;</span>
+        </div>
       </div>
     </div>
   </div>

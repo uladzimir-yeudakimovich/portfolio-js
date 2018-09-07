@@ -18,6 +18,7 @@ export class FooterComponent implements OnInit {
   };
   public show: boolean = true;
   public showMessage = [];
+  public copyMessage: string;
 
   constructor(public messageService: MessageService, translate: TranslateService) {
     translate.setDefaultLang('ru');
@@ -68,7 +69,7 @@ export class FooterComponent implements OnInit {
     }
   }
 
-  close($event) {
+  delete($event) {
     this.localMessages.splice($event.target['id'], 1);
     this.model.splice($event.target['id'], 1);
     this.messageService.updateMessage({mess: this.model});
@@ -77,15 +78,21 @@ export class FooterComponent implements OnInit {
   showDetails(e) {
     this.show = false;
     this.showMessage.push(this.localMessages[e]);
-    console.log(this.showMessage[0]);
+    this.copyMessage = this.localMessages[e]['message'];
   }
 
   updateMessage() {
     this.show = true;
+    this.showMessage = [];
+    this.copyMessage = '';
+    this.messageService.updateMessage({mess: this.model});
   }
 
   closeMessage() {
     this.show = true;
+    this.showMessage[0].message = this.copyMessage;
+    this.showMessage = [];
+    this.copyMessage = '';
   }
 
 }
