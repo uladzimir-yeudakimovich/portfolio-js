@@ -3,11 +3,10 @@
     {
       "position": "Front-end developer",
       "name": "Uladzimir Yeudakimovich",
-      "description1": "A few words about me. I graduated from Rolling Scopes School in EPAM Systems with a specialization in front-end development. I work as an engineer-programmer for IT SHARK ltd. My main programming language is JavaScript. I use frameworks Angular 4+ and Bootstrap, Ajax technology, jQuery library, webpack collector, LESS and SASS preprocessors, Git version control system. I'm experienced in the Backbone and React frameworks.",
-      "description2": "A few words about me. I graduated from Rolling Scopes School in EPAM Systems with a specialization in front-end development. I work as an engineer-programmer for IT SHARK ltd. My main programming language is JavaScript. I use frameworks Angular 4+ and Bootstrap, Ajax technology, jQuery library, webpack collector, LESS and SASS preprocessors, Git version control system. I'm experienced in the Backbone and React frameworks.",
-      "image1": "src/assets/images/logo_laptop.jpg",
-      "image2": "src/assets/images/logo_phone.jpg",
-      "image3": "src/assets/images/logo_tablet.jpg"
+      "description": "A few words about me. I graduated from Rolling Scopes School in EPAM Systems with a specialization in front-end development. I work as an engineer-programmer for IT SHARK ltd. My main programming language is JavaScript. I use frameworks Angular 4+ and Bootstrap, Ajax technology, jQuery library, webpack collector, LESS and SASS preprocessors, Git version control system. I'm experienced in the Backbone and React frameworks.",
+      "imageLaptop": "src/assets/images/logo_laptop.jpg",
+      "imagePhone": "src/assets/images/logo_phone.jpg",
+      "imageTablet": "src/assets/images/logo_tablet.jpg"
     }
   ],
   "main": [

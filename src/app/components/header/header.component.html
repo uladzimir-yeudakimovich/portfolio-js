@@ -11,7 +11,7 @@
     <div class="row" *ngIf="this.data[0] !== undefined && this.english">
       <div class="d-none d-lg-block col-lg-6 col-xl-5" style="padding: 0;">
         <figure>
-          <img class="img-fluid" src="{{this.data[0].image1}}" alt="" style="margin-bottom: -16px;">
+          <img class="img-fluid" src="{{this.data[0].imageLaptop}}" alt="logo_laptop" style="margin-bottom: -16px;">
         </figure>
       </div>
       <article class="col-lg-6 col-xl-7 information">
@@ -19,23 +19,23 @@
         <h1>{{this.data[0].name}}</h1>
         <div class="d-block d-md-none">
           <figure style="display: flex; justify-content: center; margin-top: 30px;">
-            <img class="rounded-circle" src="{{this.data[0].image2}}" alt="">
+            <img class="rounded-circle" src="{{this.data[0].imagePhone}}" alt="logo_phone">
           </figure>
         </div>
         <div class="d-none d-md-block d-lg-none">
           <figure style="display: flex; justify-content: center; margin-top: 30px;">
-            <img class="rounded-circle" src="{{this.data[0].image3}}" alt="">
+            <img class="rounded-circle" src="{{this.data[0].imageTablet}}" alt="logo_tablet">
           </figure>
         </div>
-        <p class="d-none d-lg-block">&nbsp; {{this.data[0].description1}}</p>
-        <h5 class="d-block d-lg-none">&nbsp; {{this.data[0].description2}}</h5>
+        <p class="d-none d-lg-block">&nbsp; {{this.data[0].description}}</p>
+        <h5 class="d-block d-lg-none">&nbsp; {{this.data[0].description}}</h5>
       </article>
     </div>
 
     <div class="row" *ngIf="this.data[0] !== undefined && !this.english">
       <div class="d-none d-lg-block col-lg-6 col-xl-5" style="padding: 0;">
         <figure>
-          <img class="img-fluid" src="{{this.data[0].image1}}" alt="" style="margin-bottom: -16px;">
+          <img class="img-fluid" src="{{this.data[0].imageLaptop}}" alt="logo_laptop" style="margin-bottom: -16px;">
         </figure>
       </div>
       <article class="col-lg-6 col-xl-7 information">
@@ -43,16 +43,16 @@
         <h1>{{this.data[0].name | translate}}</h1>
         <div class="d-block d-md-none">
           <figure style="display: flex; justify-content: center; margin-top: 30px;">
-            <img class="rounded-circle" src="{{this.data[0].image2}}" alt="">
+            <img class="rounded-circle" src="{{this.data[0].imagePhone}}" alt="logo_phone">
           </figure>
         </div>
         <div class="d-none d-md-block d-lg-none">
           <figure style="display: flex; justify-content: center; margin-top: 30px;">
-            <img class="rounded-circle" src="{{this.data[0].image3}}" alt="">
+            <img class="rounded-circle" src="{{this.data[0].imageTablet}}" alt="logo_tablet">
           </figure>
         </div>
-        <p class="d-none d-lg-block">&nbsp; {{this.data[0].description1 | translate}}</p>
-        <h5 class="d-block d-lg-none">&nbsp; {{this.data[0].description2 | translate}}</h5>
+        <p class="d-none d-lg-block">&nbsp; {{this.data[0].description | translate}}</p>
+        <h5 class="d-block d-lg-none">&nbsp; {{this.data[0].description | translate}}</h5>
       </article>
     </div>
   </div>
