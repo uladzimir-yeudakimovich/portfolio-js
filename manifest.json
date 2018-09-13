@@ -1,7 +1,7 @@
 {
   "short_name": "Portfolio",
   "name": "Uladzimir Yeudakimovich",
-  "start_url": "https://uladzimir-yeudakimovich.ml/portfolio-js/",
+  "start_url": "http://uladzimir-yeudakimovich.ml/portfolio-js/",
   "background_color": "#3367D6",
   "theme_color": "#536878",
   "display": "standalone",
