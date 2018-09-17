@@ -83,11 +83,11 @@ module.exports = {
   ],
   devServer: {
     host: 'localhost',
-    port: 8000,
-    //contentBase: __dirname + 'dist'
-    proxy: [{
-      path: /.*/,
-      target: 'http/localhost:3000'
-    }]
+    port: 4200,
+    contentBase: __dirname + 'dist'
+    // proxy: [{
+    //   path: /.*/,
+    //   target: 'http/localhost:3000'
+    // }]
   }
 }
