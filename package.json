@@ -28,6 +28,6 @@
     "node-cache": "^4.2.0",
     "nodemailer": "^4.6.5",
     "webpack": "^4.8.3",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "^3.1.11"
   }
 }
