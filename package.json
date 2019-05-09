@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Uladzimir Yeudakimovich",
+  "description": "portfolio",
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server"
